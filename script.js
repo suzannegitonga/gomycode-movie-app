@@ -1,5 +1,7 @@
-// 🔑 API Key comes from your config.js
-const API_KEY = TMDB_API_KEY;
+// Uses config.js locally, falls back to hardcoded key on GitHub Pages
+const API_KEY = typeof TMDB_API_KEY !== 'undefined' 
+    ? TMDB_API_KEY 
+    : '83722ef38e07dcdb55602f83d82be4d8'; // ← We'll replace this for deployment
 const BASE_URL = 'https://api.themoviedb.org/3';
 const IMG_BASE = 'https://image.tmdb.org/t/p/w500';
 
