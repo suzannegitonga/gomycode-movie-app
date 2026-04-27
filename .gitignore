@@ -1,0 +1,6 @@
+# Keep API keys out of GitHub
+config.js
+
+# Optional: keep local files clean
+.DS_Store
+Thumbs.db
